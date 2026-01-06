@@ -1,7 +1,7 @@
 	<?php
 	session_start();
 	error_reporting(0);
-	include('includes/dbconnection.php');
+	include __DIR__ . '/includes/dbconnection.php';
 
 	// Fetch the Page Description from the database
 	$sql = "SELECT PageDescription FROM tblpage WHERE PageType='aboutus'";
