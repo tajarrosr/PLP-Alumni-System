@@ -145,11 +145,11 @@ include __DIR__ . '/includes/dbconnection.php';
 	</div>
 	<script>
 		function changeColor(element) {
-			element.style.color = "#0a7d42"; // Change to the desired hover color
+			element.style.color = "#0a7d42"; 
 		}
 
 		function restoreColor(element) {
-			element.style.color = "black"; // Restore to the default color on mouseout
+			element.style.color = "black"; 
 		}
 	</script>
 	<script src="js/jquery-3.2.1.min.js"></script>

@@ -1,0 +1,23 @@
+# PLP Alumni System - Root .htaccess
+# This handles routing when document root is set to project root
+
+RewriteEngine On
+
+RewriteRule ^$ public/home.php [L]
+
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^/(admin|alumni)/
+RewriteRule ^ - [L]
+
+<FilesMatch "\.(sql|md|txt|log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+Options -Indexes
+AddDefaultCharset UTF-8
+

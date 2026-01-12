@@ -65,8 +65,7 @@
                                 <li <?php echo (basename($_SERVER['SCRIPT_NAME']) == 'contact.php') ? 'class="active"' : ''; ?>><a href="contact.php">Contact</a></li>
                                 <li <?php echo (basename($_SERVER['SCRIPT_NAME']) == 'events.php') ? 'class="active"' : ''; ?>><a href="events.php">Events</a></li>
                                 <li <?php echo (basename($_SERVER['SCRIPT_NAME']) == 'job-lists.php') ? 'class="active"' : ''; ?>><a href="job-lists.php">Posted Jobs</a></li>
-                                <li <?php echo (basename($_SERVER['SCRIPT_NAME']) == '.../alumni/login.php') ? 'class="active"' : ''; ?>><a href="../alumni/login.php">Alumni</a></li>
-                                <li <?php echo (basename($_SERVER['SCRIPT_NAME']) == '../admin/login.php') ? 'class="active"' : ''; ?>><a href="../admin/login.php">Admin</a></li>
+                                <li <?php echo (basename($_SERVER['SCRIPT_NAME']) == 'login.php' && strpos($_SERVER['REQUEST_URI'], '/alumni/') !== false) ? 'class="active"' : ''; ?>><a href="../alumni/login.php">Alumni</a></li>
                             </ul>
                         </nav>
                     </div>

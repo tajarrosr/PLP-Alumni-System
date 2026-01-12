@@ -1,0 +1,29 @@
+# PLP Alumni System - Apache Configuration
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect root URL to home.php
+RewriteRule ^$ home.php [L]
+
+# Allow direct access to existing files
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rewrite other PHP files (if accessed without .php extension)
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Security: Prevent access to .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevent directory listing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
