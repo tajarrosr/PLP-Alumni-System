@@ -61,7 +61,7 @@ include __DIR__ . '/includes/dbconnection.php';
 							<div class="container">
 								<div class="row">
 									<div class="col text-center">
-										<div class="home_slider_title">Welcome to the Alumni Lineage!</div>
+										<div class="home_slider_title">Welcome mo to the Alumni Lineage!</div>
 										<div class="home_slider_subtitle">On this website, you will find information about upcoming events and job opportunities</div>
 									</div>
 								</div>
