@@ -12,5 +12,21 @@ node_modules/
 .env
 .env.local
 .DS_Store
+Thumbs.db
+
+.git/
+.github/
+.gitignore
+README.md
+*.md
+INFINITYFREE_DEPLOYMENT_GUIDE.md
+INFINITYFREE_GITHUB_AUTO_DEPLOY.md
+.vscode/
+.idea/
+node_modules/
+*.log
+.env
+.env.local
+.DS_Store
 Thumbs.db 
 
